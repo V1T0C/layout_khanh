@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/32cb3cd4b5.js" crossorigin="anonymous"></script>
+	<link href='https://kit.fontawesome.com/32cb3cd4b5.js' rel='stylesheet'>
+	<!-- Round slider -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link
+		href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css"
+		rel="stylesheet"/>
+	<script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+	<!-- T ko hieu sao de script o duoi no lai ko chay ne  de le day -->
+		<!-- My CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- Victor's css -->
+		<link rel="stylesheet" href="vi.css">
+	<title>Khanh Nghiem</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-home-smile'></i>
+			<span class="text">Home</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-tv' ></i>
+					<span class="living-room">Living Room</span>
+					
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-cookie'></i>
+					<span class="text">Kitchen</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-bed'></i>
+					<span class="text">Bedroom</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">My Parent</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main class="layout dashboard visible">
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>123 kWh</h3>
+						<p>Attrition</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>4</h3>
+						<p>People</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>$2543</h3>
+						<p>Total Payment</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Monthly Electricity Bill</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>User</th>
+								<th>Date of payment</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="img/people.jpg">
+									<p>Khanh Nghiem</p>
+								</td>
+								<td>01-10-2023</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Nhi.jpg">
+									<p>Yen Nhi</p>
+								</td>
+								<td>01-10-2023</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Nhi.jpg">
+									<p>Yen Nhi</p>
+								</td>
+								<td>01-10-2023</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/Nhi.jpg">
+									<p>Yen Nhi</p>
+								</td>
+								<td>01-10-2023</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.jpg">
+									<p>Khanh Nghiem</p>
+								</td>
+								<td>01-10-2023</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>Todos</h3>
+						<i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+	<section id = "living-room">
+		<main class="layout living-room">
+			<div class="head-title">
+				<div class="left">
+					<h1>Living Room</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">living Room</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Main</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		    <div class="grid-container .device-container">
+				<div class="item1">
+					<div class="slider-container">
+						<div class="slider-section relative">
+							<div id="slider"></div>
+							<div
+								class="display-data text-center absolute flex flex-column item-center content-center"
+							>
+								<h2>Temperature</h2>
+								<h1><span id="airconValue">21</span></h1>
+								<h2>°C</h2>
+							</div>
+							<div class="min-max absolute flex transparent">
+								<h3 class="min">16°C</h3>
+								<h3 class="max">30°C</h3>
+							</div>
+							<div class="air-conditioner flex absolute">
+								<span><i class="uil uil-wind"></i></span>
+								<span class="active"><i class="uil uil-snowflake"></i></span>
+								<span><i class="uil uil-cloud-drizzle"></i></span>
+								<span><i class="uil uil-sun"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item2 device-switch pointer">
+					<i class='bx bx-wind'>Air Condition</i>
+					<h1>Panasonic N73</h1>
+				</div>
+				<div class="item3 device-switch pointer">
+					<i class='bx bxs-bulb'>Smart Lamp</i>
+					<h1>Xiaomi Yeelight</h1>
+				</div>  
+				<div class="item4 device-switch pointer">
+					<i class='bx bxs-mobile-vibration'>Google Home</i>
+					<h1>Smart Speaker</h1>
+				</div>
+				<div class="item4 device-switch pointer">
+					<i class='bx bxs-hdd'>Smart Modem</i>
+					<h1>Telstra Modem 3</h1>
+				</div>
+			  </div>
+		</main>
+
+
+		<main class="layout bedroom">
+			<div class="head-title">
+				<div class="left">
+					<h1>Bedroom</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Bedroom</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Main</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</main>
+
+		<main class="layout kitchen">
+			<div class="head-title">
+				<div class="left">
+					<h1>Kitchen</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Kitchen</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Main</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<main class="layout my-parent">
+			<div class="head-title">
+				<div class="left">
+					<h1>My Parent</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">My Parent</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Main</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</main>
+		
+		
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
+	<script src="vi.js"></script>
+</body>
+</html>
